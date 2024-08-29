@@ -1,2 +1,12 @@
 # Food-App
-Foodie Haven is a React-based online food app for pizza ordering. It features a dynamic product list, easy cart management, and a clean, responsive design using Bootstrap. Browse pizzas, customize your order, and manage your cart with ease. Perfect for a seamless and enjoyable food ordering experience.
+Foodie Haven is an online food ordering app built with React and Bootstrap. This application allows users to browse a list of pizzas, customize their orders, and manage their cart with ease. It offers a modern, responsive design for an enhanced user experience.
+
+Features
+Product Showcase: View a variety of pizzas with images, descriptions, and prices.
+Cart Management: Add, remove, or adjust pizza quantities and view the total cost.
+Responsive Design: Optimized for both desktop and mobile devices using Bootstrap.
+Navigation: Smooth navigation between different sections of the app.
+Technologies Used
+React: For building the user interface and managing application state.
+Bootstrap: For responsive design and styling.
+CSS: For custom styling and layout adjustments.
