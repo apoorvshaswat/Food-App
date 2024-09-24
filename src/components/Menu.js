@@ -9,6 +9,7 @@ export default function Menu() {
       <p>1) Pizza</p>
       <p>2) Burger</p>
       <p>3) Biryani</p>
+      <p>4) Pasta</p>
     </div>
   );
 }

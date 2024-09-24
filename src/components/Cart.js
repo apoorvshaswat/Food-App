@@ -6,8 +6,7 @@ export default function Cart(props) {
     <div className="cart_outer">
       <div className="cart">
         <h2>
-          {" "}
-          <b> Your Shopping Cart ( {props.totalQuantity} Items )</b>
+          <b>Your Shopping Cart ({props.totalQuantity} Items)</b>
         </h2>
 
         <div className="totalamount">
@@ -15,22 +14,15 @@ export default function Cart(props) {
         </div>
 
         <div className="button_buy">
-          <button type="button" class="btn btn-primary">
-            <Link
-              className="nav-link active"
-              aria-current="page"
-              to="/thanks"
-              bg-white
-            >
-              Buy
-            </Link>
-          </button>
+          <Link className="btn btn-primary" aria-current="page" to="/thanks">
+            Buy
+          </Link>
         </div>
 
         <div className="button_reset">
           <button
             type="button"
-            class="btn btn-danger"
+            className="btn btn-danger"
             onClick={() => props.reset()}
           >
             Reset

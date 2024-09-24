@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import "./App.css";
 import Header from "./components/Header";
 import About from "./components/About";
 import Cart from "./components/Cart";
@@ -9,13 +8,18 @@ import Navbar from "./components/Navbar";
 import ContactUs from "./components/ContactUs";
 import Thanks from "./components/Thanks";
 import ReadMore from "./components/ReadMore";
+import "./App.css";
 
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 function App() {
   const products = [
-    { name: "Pizza", price: 150, quantity: 0, imgSrc: "/img/pizza.png" },
+    { name: "Italian Pizza", price: 150, quantity: 0, imgSrc: "/img/pizza2.png" },
+    { name: "Sicilian Pizza", price: 250, quantity: 0, imgSrc: "/img/pizza3.png" },
+    { name: "Brick Oven Pizza", price: 200, quantity: 0, imgSrc: "/img/pizza4.png" },
+    { name: "Pasta", price: 120, quantity: 0, imgSrc: "/img/pasta2.png" },
     { name: "Burger", price: 100, quantity: 0, imgSrc: "/img/burger.png" },
+    { name: "Biryani", price: 300, quantity: 0, imgSrc: "/img/biryani.png" }, 
   ];
 
   const [productList, setProductList] = useState(products);

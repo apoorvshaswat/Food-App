@@ -3,6 +3,7 @@ import React from "react";
 export default function ReadMore() {
   return (
     <div className="readmore">
+      <h3>About Us</h3>
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere quo aut
         officiis delectus, neque, voluptatem repellendus sit soluta porro odit

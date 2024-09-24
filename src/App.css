@@ -5,7 +5,7 @@
 }
 
 body {
-  margin-top: 60px; 
+  margin-top: 60px;
   background-color: white;
   color: black;
 }
@@ -29,7 +29,7 @@ body {
   width: 100%;
   padding: 20px 20px;
   background: black;
-  z-index: 1000; 
+  z-index: 1000;
 }
 
 .navbar__text {
@@ -62,8 +62,11 @@ body {
 .banner {
   width: 100%;
   height: 100vh;
-  background: url("/img/bg.jpg") no-repeat center center/cover;
+  background: url("/img/bg.jpg");
   position: relative;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
 }
 
 .banner__content {
@@ -112,53 +115,72 @@ body {
 }
 
 /* Product Section */
-.product_main {
+.product_container {
   width: 100%;
-  height: 100vh;
   background: url("/img/bg8.png") no-repeat center center/cover;
   color: white;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.product_heading {
   text-align: center;
-  padding-top: 20px;
-  font-size: 2rem;
+  font-size: 3rem;
+  margin-bottom: 20px;
+  color: red;
 }
 
-.col-4 {
-  color: white;
-  width: 100%;
-  height: 0;
-  padding-top: 4rem;
+.product_main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px 0;
+  box-sizing: border-box;
 }
 
-.prices {
-  width: 100%;
-  padding: 0;
-}
-
-.price {
-  padding: 0;
+.product {
+  flex: 0 0 30%;
+  box-sizing: border-box;
+  margin: 10px;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 8px;
   text-align: center;
-  margin: 0;
 }
 
-.price__img img {
-  width: 250px;
+.product-image img {
+  width: 100%;
+  max-width: 250px;
+  border-radius: 8px;
 }
 
-.price__heading {
+.product-heading {
   margin-top: 20px;
   font-size: 25px;
 }
 
-.price__text {
+.product-description {
   margin-top: 15px;
   color: white;
   font-size: 18px;
   font-weight: 300;
 }
 
-.price_rs {
+.product-price {
   font-size: 30px;
   margin-top: 15px;
+}
+
+.product-quantity {
+  margin-top: 15px;
+}
+
+.btn {
+  margin: 5px;
+}
+
+.quantity {
+  margin: 0 10px;
 }
 
 /* Cart Section */
@@ -173,12 +195,13 @@ body {
 }
 
 .cart {
-  padding: 40px 0;
+  padding: 0px 0;
   text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  gap: 10px;
 }
 
 button {
@@ -251,7 +274,7 @@ button {
 .thanks,
 .contactus,
 .menu {
-  padding-top: 80px; /* Adjust based on the height of your navbar */
+  padding-top: 80px;
   margin-top: 0;
 }
 
@@ -265,7 +288,8 @@ button {
 }
 
 .contactus h3,
-.menu h3 {
+.menu h3,
+.readmore h3 {
   padding-top: 30px;
   font-size: 50px;
 }
@@ -304,6 +328,10 @@ button {
     margin: 0;
   }
 
+  .product {
+    flex: 0 0 100%;
+  }
+
   .about .col-6,
   .prices {
     width: 100%;
@@ -321,7 +349,11 @@ button {
   .thanks,
   .contactus,
   .menu {
-    height: auto; 
-    padding: 20px; 
+    height: auto;
+    padding: 20px;
+  }
+
+  .navbar__text {
+    width: 100%;
   }
 }
