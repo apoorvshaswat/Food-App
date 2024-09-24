@@ -346,14 +346,18 @@ button {
   .product_main,
   .cart_outer,
   .readmore,
-  .thanks,
-  .contactus,
-  .menu {
+  .contactus {
     height: auto;
     padding: 20px;
   }
 
   .navbar__text {
     width: 100%;
+  }
+
+  .thanks,
+  .menu {
+    height: 100vh;
+    padding: 20px;
   }
 }
