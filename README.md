@@ -1,6 +1,6 @@
-# Foodie Haven
+# Foodie Heaven
 
-Foodie Haven is a React-based online food app designed for easy pizza ordering. The app features a dynamic product list, intuitive cart management, and a clean, responsive design using Bootstrap. Users can browse various pizzas, customize their orders, and manage their carts effortlessly, ensuring a seamless and enjoyable food ordering experience.
+Foodie Heaven is a React-based online food app designed for easy pizza ordering. The app features a dynamic product list, intuitive cart management, and a clean, responsive design using Bootstrap. Users can browse various pizzas, customize their orders, and manage their carts effortlessly, ensuring a seamless and enjoyable food ordering experience.
 
 ## Features
 
