@@ -23,11 +23,11 @@ body {
   justify-content: right;
   align-items: center;
   position: fixed;
-
   top: 0;
   left: 0;
   width: 100%;
-  padding: 20px 20px;
+  padding-top: 20px;
+  padding-right: 20px;
   background: black;
   z-index: 1000;
 }
@@ -62,11 +62,8 @@ body {
 .banner {
   width: 100%;
   height: 100vh;
-  background: url("/img/bg.jpg");
-  position: relative;
+  background: url("/img/bg.jpg") no-repeat center center;
   background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
 }
 
 .banner__content {
@@ -150,13 +147,13 @@ body {
 
 .product-image img {
   width: 100%;
-  max-width: 250px;
+  max-width: 150px;
   border-radius: 8px;
 }
 
 .product-heading {
   margin-top: 20px;
-  font-size: 25px;
+  font-size: 22px;
 }
 
 .product-description {
@@ -167,7 +164,7 @@ body {
 }
 
 .product-price {
-  font-size: 30px;
+  font-size: 25px;
   margin-top: 15px;
 }
 
@@ -306,10 +303,20 @@ button {
 
 .readmore {
   font-size: 25px;
+  height: 100vh;
+  margin-bottom: 0;
+  padding-bottom: 10px;
 }
 
 .thanks {
   padding-top: 3rem;
+}
+
+.contactus p,
+.readmore p {
+  width: 50vw;
+  text-align: center;
+  margin-left: 25%;
 }
 
 /* Media Queries */
@@ -359,5 +366,73 @@ button {
   .menu {
     height: 100vh;
     padding: 20px;
+  }
+
+  .navbar__ul li a {
+    font-size: small;
+  }
+
+  .banner__text h3 {
+    font-size: 35px;
+    text-align: center;
+    padding: 10px;
+  }
+
+  .banner__text p {
+    font-size: 20px;
+    text-align: center;
+    padding: 10px;
+  }
+
+  .navbar {
+    padding-top: 10px;
+    padding-right: 0px;
+  }
+
+  body {
+    margin-top: 50px;
+    background-color: white;
+    color: black;
+  }
+
+  .product_heading {
+    font-size: 2rem;
+  }
+
+  .menu h3,
+  .contactus h3 {
+    font-size: 40px;
+  }
+
+  .menu p {
+    font-size: 30px;
+  }
+
+  .menu,
+  .contactus,
+  .readmore {
+    padding-top: 30px;
+  }
+
+  .menu h3,
+  .contactus h3,
+  .readmore h3 {
+    font-size: 40px;
+  }
+
+  .contactus p {
+    font-size: 20px;
+    height: 100vh;
+  }
+
+  .readmore p {
+    font-size: 20px;
+    height: auto;
+    width: 75vw;
+    margin-left: 10%;
+  }
+
+  .thanks h4 {
+    font-size: 30px;
   }
 }

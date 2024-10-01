@@ -10,8 +10,8 @@ export default function ProductList(props) {
       <div className="product_main">
         {props.productList.map((product, index) => (
           <Product
-            product={product}
             key={index}
+            product={product}
             index={index}
             incrementQuantity={props.incrementQuantity}
             decrementQuantity={props.decrementQuantity}
