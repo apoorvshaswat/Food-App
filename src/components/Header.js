@@ -11,11 +11,11 @@ const Header = () => {
             <p>
               Order your favorite dishes in your town, right to your doorstep!
             </p>
-            <div className="banner__btn">
+            {/* <div className="banner__btn">
               <Link to="/thanks" className="btn btn-smart">
-                DELIVERY NOW
+                Order Now
               </Link>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

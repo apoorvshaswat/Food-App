@@ -14,8 +14,8 @@ export default function Cart(props) {
         </div>
 
         <div className="button_buy">
-          <Link className="btn btn-primary" aria-current="page" to="/thanks">
-            Buy
+          <Link className="btn btn-primary" aria-current="page" to="/checkout">
+            View Your Cart
           </Link>
         </div>
 

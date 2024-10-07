@@ -10,12 +10,28 @@ import Navbar from "./components/Navbar";
 import ContactUs from "./components/ContactUs";
 import Thanks from "./components/Thanks";
 import ReadMore from "./components/ReadMore";
+import CheckOut from "./components/CheckOut";
 
 function App() {
   const products = [
-    { name: "Italian Pizza", price: 150, quantity: 0, imgSrc: "/img/pizza2.png" },
-    { name: "Sicilian Pizza", price: 250, quantity: 0, imgSrc: "/img/pizza3.png" },
-    { name: "Brick Oven Pizza", price: 200, quantity: 0, imgSrc: "/img/pizza4.png" },
+    {
+      name: "Italian Pizza",
+      price: 150,
+      quantity: 0,
+      imgSrc: "/img/pizza2.png",
+    },
+    {
+      name: "Sicilian Pizza",
+      price: 250,
+      quantity: 0,
+      imgSrc: "/img/pizza3.png",
+    },
+    {
+      name: "Brick Oven Pizza",
+      price: 200,
+      quantity: 0,
+      imgSrc: "/img/pizza4.png",
+    },
     { name: "Pasta", price: 120, quantity: 0, imgSrc: "/img/pasta2.png" },
     { name: "Burger", price: 100, quantity: 0, imgSrc: "/img/burger.png" },
     { name: "Biryani", price: 300, quantity: 0, imgSrc: "/img/biryani.png" },
@@ -88,6 +104,10 @@ function App() {
         <Route path="/contactus" element={<ContactUs />}></Route>
         <Route path="/thanks" element={<Thanks />}></Route>
         <Route path="/readmore" element={<ReadMore />}></Route>
+        <Route
+          path="/checkout"
+          element={<CheckOut productList={productList} />}
+        ></Route>
       </Routes>
     </BrowserRouter>
   );

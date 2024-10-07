@@ -319,6 +319,46 @@ button {
   margin-left: 25%;
 }
 
+.checkout {
+  color: white;
+  font-size: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  border: white;
+  border-width: 5px;
+  border-style: solid;
+  min-height: 50vh;
+  height: auto;
+  gap: 50px;
+  padding-top: 50px;
+  margin: 5%;
+
+  padding-bottom: 50px;
+  
+}
+
+
+.checkoutlist {
+  text-align: center;
+}
+
+.checkout_outer {
+  background: url("/img/bg8.png") no-repeat center center/cover;
+  height: auto;
+  min-height: 100vh;
+  padding-top: 2%;
+  padding-bottom: 50px;
+}
+
+.total {
+  border: white;
+  border-width: 3px;
+  border-style: solid;
+  padding: 10px;
+}
+
 /* Media Queries */
 @media (max-width: 770px) {
   .banner__content {
@@ -423,6 +463,8 @@ button {
   .contactus p {
     font-size: 20px;
     height: 100vh;
+    width: 75vw;
+    margin-left: 10%;
   }
 
   .readmore p {
